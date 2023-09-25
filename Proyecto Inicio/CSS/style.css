@@ -1,4 +1,4 @@
-html {
+/* html {
     font-size: 62.5%;
 }
 
@@ -6,7 +6,7 @@ body{
     font-size: 16px;
     background-color: white;
 }
-/*ESTO ME PERMITE CONSEGUIR 16PX=1REM SIN ESO 16PX=1REM*/
+ESTO ME PERMITE CONSEGUIR 16PX=1REM SIN ESO 16PX=1REM
 
 h1 {
     color: red;
@@ -23,10 +23,10 @@ h1 {
     max-width: 60%;
 }
 
-/* .h5azul{
+.h5azul{
     color: white;
     background-color: blue;
-} */
+}
 
 .SeccionPrueba h5{
     color: white;
@@ -41,4 +41,66 @@ h1 {
 .SeccionPrueba h3{
     color: white;
     background-color: green;
+}
+
+SELECTOR DE CLASE
+.primerh3{
+color: red;
+text-transform: uppercase;
+font-size: 3rem;
+text-align: center;
+}
+
+SELECTOR DE CLASE
+#segundoh3{
+color: red;
+text-transform: uppercase;
+font-size: 3rem;
+text-align: center;
+}
+
+SELECTOR DE ELEMENTO
+h6{
+    color: red;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+SELECTOR DE COMBINACION DECENDENTE
+.ejercicioSelectores p{
+    color: red;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+SELECTOR DE ATRIBUTO
+[src="IMG/Logo-Adecco.png"]{
+    background-color: yellow;
+}
+
+SELECTOR DE TODOS LOS HIJOS
+.ejercicioSelectores > a{
+    color: orange;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+SELECTOR MULTIPLE
+#segundoh3, [src="IMG/Logo-Adecco.png"]{
+    background-color: black;
+} */
+h1{
+    color:white;
+    font-size: 4.7rem;
+    background-color: rgba(248, 102, 102, 0.65);
+    font-weight: 800;
+    padding: 35px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
 }
