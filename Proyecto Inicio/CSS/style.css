@@ -1,13 +1,21 @@
-/* html {
+:root{
+--colorPrincipal:#F76666;
+--colorSecundario:#02052F;
+--fuentePrincipal: 'Open Sans', sans-serif;
+}
+
+/* ESTO ME PERMITE CONSEGUIR 16PX=1REM SIN ESO 16PX=1REM */
+html {
     font-size: 62.5%;
 }
 
 body{
     font-size: 16px;
-    background-color: white;
+    /* background-color: var(--colorPrincipal); */
+    font-family: var(--fuentePrincipal);
 }
-ESTO ME PERMITE CONSEGUIR 16PX=1REM SIN ESO 16PX=1REM
 
+/*
 h1 {
     color: red;
     background-color: yellow;
@@ -103,3 +111,7 @@ h1{
     margin-bottom: 10px;
     line-height: 1.2;
 }
+
+/* .ejercicioColor {
+    background-color: var(--colorPrincipal);
+} */
