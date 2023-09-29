@@ -8,7 +8,13 @@
 /* ESTO ME PERMITE CONSEGUIR 16PX=1REM SIN ESO 16PX=1REM */
 html {
     font-size: 62.5%;
+    /* box-sizing: border-box; */
 }
+
+/* ESTO ES UNA FUNCION GENERICA PARA DECIRLE QUE SOLO ME TOME EL VALOR DE ALTO Y ANCHO SIN TENER EN CUENTA LOS PADDING Y DEMAS */
+/* *, *before, *:after{
+    box-sizing: inherit;
+} */
 
 body{
     font-size: 16px;
@@ -166,7 +172,7 @@ h1{
 .fondoMain a:hover{
     color: var(--colorPrincipal);
     background-color: white;
-    border: 1px solid var(--colorPrincipal); /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
+    border: 2px solid var(--colorPrincipal); /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
 }
 
 .flexMain{
@@ -285,6 +291,12 @@ h1{
     display: inline-block;
 }
 
+.cursosOfertados a:hover{
+    color: white;
+    background-color: var(--colorPrincipal);
+    border: 2px solid white; /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
+}
+
 .marketing{
     background-image: url(../IMG/Curso-marketing-digital-centro.png);
     background-size: cover;
@@ -347,6 +359,14 @@ h1{
 }*/
 
 /* ESTILO SECCION VIDEO */
+
+.seccionVideo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 

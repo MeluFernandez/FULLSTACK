@@ -1,0 +1,115 @@
+/* EJERCICIO DE DIFERENCIA ENTRE SELECTOR DE CADENA DECENDENTE Y TODOS LOS HIJOS */
+
+.selectorCadenaDecendente div h2{
+    background-color: blue;
+    height: 100px;
+}
+
+.selectorTodosLosHijos > div > div > h2{
+    background-color: blue;
+    height: 100px;
+}
+
+
+/* EJERCICIO DIFERENCIA ENTRE PADDING Y MARGIN */
+
+.ejercicioPadding{
+    height: 200px;
+    background-color: green;
+    padding: 50px;
+}
+
+.ejercicioMargin{
+    height: 200px;
+    background-color: yellow;
+    margin: 50px;
+    border: 50PX solid black;
+}
+
+/* EJERCICIO DISPLAY BLOCK E INLINE */ 
+
+.ejercicioDisplay > p{
+    background-color: green;
+}
+
+.ejercicioDisplay a{
+    background-color: yellow;
+}
+
+.ejercicioDisplay h1{
+    background-color: orange;
+}
+
+.ejercicioDisplay h3{
+    background-color: purple;
+}
+
+.ejercicioDisplay h6{
+    background-color: pink;
+}
+
+.ejercicioDisplay div{
+    background-color: red;
+}
+
+.ejercicioDisplay2 p{
+    background-color: green;
+    display: inline;
+}
+
+.ejercicioDisplay2 a{
+    background-color: yellow;
+    display: block;
+}
+
+.ejercicioDisplay2 h1{
+    background-color: orange;
+    display: inline;
+}
+
+.ejercicioDisplay2 h3{
+    background-color: purple;
+    display: inline;
+}
+
+.ejercicioDisplay2 h6{
+    background-color: pink;
+    display: inline;
+}
+
+/* .ejercicioDisplay2 div{
+    display: inline;
+} */
+
+/* .ejercicioDisplay2 > div > p{
+    background-color: red;
+} */
+
+.ejercicioDisplay2 div, .ejercicioDisplay2 > div > p{
+    background-color: red;
+    display: inline;
+}
+
+/* EJERCICIO DISPLAY FLEX USO DE JUSTIFY-CONTENT Y ALIGN ITEMS */
+
+.flex1 h5{
+    width: 300px; /*ANCHO*/
+    height: 300px; /*ALTO*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: green;
+}
+
+.flex2 h5{
+    width: 300px; /*ANCHO*/
+    height: 300px; /*ALTO*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: blue;
+}
+
+
