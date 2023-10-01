@@ -5,9 +5,9 @@
 --fuenteBotones: "DinBold", sans-serif;
 }
 
-/* ESTO ME PERMITE CONSEGUIR 16PX=1REM SIN ESO 16PX=1REM */
+
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; 
     /* box-sizing: border-box; */
 }
 
@@ -17,7 +17,7 @@ html {
 } */
 
 body{
-    font-size: 16px;
+    font-size: 16px; /* ESTO ME PERMITE CONSEGUIR 10PX=1REM SIN ESO 16PX=1REM */
     /* background-color: var(--colorPrincipal); */
     font-family: var(--fuentePrincipal);
 }
@@ -57,6 +57,10 @@ h1 {
     color: white;
     background-color: green;
 }
+
+
+
+/* EJERCICIO DE SELECTORES 
 
 SELECTOR DE CLASE
 .primerh3{
@@ -123,6 +127,10 @@ SELECTOR MULTIPLE
     background-color: var(--colorPrincipal);
 } */
 
+
+
+
+
 /* ESTILOS GENERICOS */
 .contenedor{
     max-width: 85%;
@@ -144,7 +152,7 @@ SELECTOR MULTIPLE
 }
 
 .margenDerecho{
-    margin-right: 30%;
+    margin-right: 33%;
 }
 
 h1{
@@ -181,6 +189,8 @@ h1{
     justify-content: space-between;
 }
 
+
+/* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
 .flexLogos {    
     background-color: white;
     display: flex;
@@ -192,8 +202,6 @@ h1{
     border-radius: 12px; /*DAR FORMA CIRCULAR*/
 }
 
-
-/* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
 
 /* ESTILOS SECCION CURSOS */
 .seccionCursos h3{
@@ -312,6 +320,13 @@ h1{
     background-position: right;
     margin-right: 15px;
 }
+
+/* .ejercicioMax{
+    background-color: red;
+    max-width: 800px;
+    height: 200px;
+} */
+
 
 /* ESTILOS SECCION PIDENOSLO */
 
