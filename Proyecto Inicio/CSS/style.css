@@ -20,7 +20,22 @@ body{
     font-size: 16px; /* ESTO ME PERMITE CONSEGUIR 10PX=1REM SIN ESO 16PX=1REM */
     /* background-color: var(--colorPrincipal); */
     font-family: var(--fuentePrincipal);
+    /* background-color: red; */ /*ESTO ES UN EJEMPLO PARA LO DEL RESPONSIVE*/
+
 }
+
+/* @media (min-width:900px) (SCREEN)PANTALLA Q QUEREMOS QUE AFECTE {
+    /* body{
+        background-color: yellow;
+    }
+} */
+
+/* @media (max-width:700px) (SCREEN)PANTALLA Q QUEREMOS QUE AFECTE {
+    body{
+        background-color: blue;
+    } 
+} */
+
 
 /*
 h1 {
@@ -132,8 +147,9 @@ SELECTOR MULTIPLE
 
 
 /* ESTILOS GENERICOS */
+
 .contenedor{
-    max-width: 90%;
+    max-width: 88%;
     /* margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -141,6 +157,98 @@ SELECTOR MULTIPLE
     /* margin: 0 auto 0 auto */
     margin: 0 auto;
 }
+
+/* @media (min-width:1140px){
+    .contenedor{
+        max-width: 88%;
+        margin: 0 auto;
+    } 
+ }
+
+@media (max-width:1140px) and (min-width:768px){
+    .contenedor{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px){
+    .contenedor{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+} */
+
+
+
+/* ESTILOS HEADER */
+.seccionHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.seccionEnlaces{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccionLogin{
+    display: flex;
+    justify-content: flex-end;
+}
+.seccionLogin a {
+    color: var(--colorPrincipal);
+    font-family: var(--fuentePrincipal);
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+
+.seccionLogin a:hover{
+    text-decoration: underline;
+}
+
+
+.seccionBarra a {
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.7rem;
+    display: inline-block;
+}
+
+.seccionBarra a:hover{
+    text-decoration: underline;
+}
+
+.botonInformate{
+    background-color: var(--colorPrincipal);
+    padding: 0.6rem 1.5rem;
+    border-radius: 4rem;
+    color: white !important;
+}
+
+.botonInformate:hover{ 
+    background-color: #17a2b8 !important;
+    text-decoration: none !important;
+}
+
+.seccionImagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 
 /* ESTILOS PARA EL MAIN */
 .fondoMain{
@@ -155,6 +263,12 @@ SELECTOR MULTIPLE
     margin-right: 33%;
 }
 
+@media (max-width:1140px) {
+    .margenDerecho{
+        margin-right: 0;
+    }
+}
+
 h1{
     background: rgba(248, 102, 102, 0.65);
     font-family: var(--fuentePrincipal) ;
@@ -164,6 +278,14 @@ h1{
     padding: 35px;
     color: white;
 }
+
+/* h1:before {
+    content: "texto con pseudoelemento";
+}
+
+h1:after {
+    content: "texto con pseudoelemento";
+}  */
 
 .fondoMain a{
     background-color: black;
@@ -177,11 +299,18 @@ h1{
     font-size: 1.4rem;
 }
 
+@media (max-width:768px) {
+    .fondoMain a{
+        padding: 24px 70px;
+    }
+}
+
 .fondoMain a:hover{
     color: var(--colorPrincipal);
     background-color: white;
     border: 2px solid var(--colorPrincipal); /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
 }
+
 
 .flexMain{
     display: flex;
@@ -189,6 +318,9 @@ h1{
     justify-content: space-between;
 }
 
+.flexMain img{
+    margin-right: 10px;
+}
 
 /* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
 .flexLogos {    
@@ -201,6 +333,29 @@ h1{
     margin-top: -120px; /*MARGEN DE ARRIBA PARA ALINEARLO, ES UNA MALA PRACTICA PARA EL CEO CON EL NUMERO NEGATIVO*/
     border-radius: 12px; /*DAR FORMA CIRCULAR*/
 }
+
+@media (max-width:1140px) and (min-width:768px) {
+    [src="IMG/Logos-oficiales.png"]{
+        max-width: 70%;
+    }
+
+    [src="IMG/Logos-Adeco.png"]{
+        max-width: 30%;
+    }
+}
+
+@media (max-width:768px){
+    .flexLogos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexLogos img{
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
 
 
 /* ESTILOS SECCION CURSOS */
@@ -268,6 +423,13 @@ h1{
     justify-content: space-between;
 }
 
+@media (max-width:768px) {
+    .cursosOfertados{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .cursosOfertados>div{
     max-width: 50%;
     flex: 2;
@@ -276,6 +438,23 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     min-height: 300px; /*LO MINIMO ES 300*/
+}
+
+@media (max-width:1140px) {
+    .cursosOfertados>div{
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .cursosOfertados>div{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        max-width: 100%;
+
+    }
 }
 
 .cursosOfertados div h2{
@@ -299,6 +478,10 @@ h1{
     display: inline-block;
 }
 
+@media (max-width:1140px) {
+
+}
+
 .cursosOfertados a:hover{
     color: white;
     background-color: var(--colorPrincipal);
@@ -320,6 +503,8 @@ h1{
     background-position: right;
     margin-right: 15px;
 }
+
+
 
 /* .ejercicioMax{
     background-color: red;
@@ -381,7 +566,19 @@ h1{
     margin-bottom: 70px;
 }
 
+@media (max-width:1140px) {
+    .seccionVideo iframe {
+        width: 100%;
+        height: 350px;
+    }
+}
 
+@media (max-width:768px) {
+    .seccionVideo iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
@@ -391,9 +588,23 @@ h1{
     margin-bottom: 100px;
 }
 
+@media (max-width:1140px) {
+    .seccionParaQuien {
+        flex-direction: column;
+    }
+}
+
+
 .seccionParaQuien>div{
     flex: 1;
     max-width: 50%;
+}
+
+@media (max-width:1140px) {
+    .secccionParaQuien>div {
+       flex: 1;
+       max-width: 100%;
+}
 }
 
 .seccionParaQuien h3{
@@ -544,18 +755,50 @@ font-family: var(--fuentePrincipal);
 }
 
 
+
+@media (max-width:1140px) {
+    .cajaLocalizaciones div{
+        width: 50%;
+    }
+}
+
+@media (max-width:768px){
+    .cajaLocalizaciones{
+        flex-wrap: wrap;
+    }
+    .cajaLocalizaciones div{
+        width: 100%;
+    }
+}
+
+
+
 /* ESTILOS CONTACTAR */
 
 .seccionContactar{
     background-color: var(--colorPrincipal);
-    padding: 90px 0;
-    text-transform: uppercase; 
-    font-family: var(--fuentePrincipal);
-    color: white;
+    padding-top: 90px;
+    padding-bottom: 130px;
+    
 }
 
 .seccionContactar h3{
     font-weight: 300;
+    text-transform: uppercase; 
+    font-family: var(--fuentePrincipal);
+    color: white;
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.seccionContactar h2{
+    color: white;
+    margin-bottom: 22px;
+    font-weight: 300;
+    text-transform: uppercase; 
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+
 }
 
 
@@ -563,17 +806,106 @@ font-family: var(--fuentePrincipal);
     display: flex;
 }
 
+
 .cajaContactar div{
-    flex: 1;
-    max-width: 50%;
+    width: 50%;
     background-color: white;
     margin-right: 15px;
-    border-radius: 0,55rem;
+    border-radius: 0.55rem;
+    display: flex;
+}
+
+.cajaContactar p{
+    color: var(--colorSecundario);
+    font-size: 1.4rem;
+    margin-top: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
 }
 
 
+.cajaContactar a{
+    color: var(--colorPrincipal);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--fuentePrincipal);
+}
+
+.cajaContactar .llamanosHijo{
+    flex-direction: column;
+    padding: 40px;
+}
+
+.cajaContactar .escribenosHijo{
+    flex-direction: column;
+    padding: 40px;
+}
+
+.cajaContactar .icon{
+   height: 60px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: 40px;
+}
+
+@media (max-width:1140px){
+    .cajaContactar {
+        flex-direction: column;
+}
+
+.llamanos, .escribenos {
+    max-width: 100%;
+    margin:10px 0px;
+}
+
+.cajaContactar .icon{
+    height: 60px;
+}
+}
+
 /* ESTILOS FOOTEER */
 
-/* ESTILOS HEADER */
+.seccionFinal{
+    background-color: #f3f3f5;
+}
+.seccionFinal .contenedor{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.enlacesFooter{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--colorSecundario);
+}
+
+
+.enlacesFooter a{
+    font-weight: 800;
+    color: var(--colorSecundario);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    margin-right: 50px;
+    line-height: 1.2;
+}
+
+.paginasLegales{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--colorSecundario);
+}
+
+.paginasLegales a{
+    color: var(--colorSecundario);
+    padding: 20px;
+    margin-right: 80px;
+    font-size: 1.4rem;
+}
+
+
 
 

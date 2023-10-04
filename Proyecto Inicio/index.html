@@ -56,23 +56,28 @@
         <a href="">Tercer Enlace</a>
     </section> -->
 
-    <header>
-      <a
-        href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx"
-        >Login Alumnos</a
-      >
-      <a
-        href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx"
-        >Login Empresas</a
-      >
-      <a href="https://www.tucarreradigital.es/"
-        ><img src="IMG/Tu-carrera-digital-general.png" alt=""
-      /></a>
-      <a href="https://www.tucarreradigital.es/zona-centro#cursos">Cursos</a>
-      <a href="https://www.tucarreradigital.es/sobre-nosotros"
-        >Sobre Nosotros</a
-      >
-      <a href="">Infórmate</a>
+    <header class="seccionHeader contenedor">
+
+      <div class="seccionImagen">
+        <a href="https://www.tucarreradigital.es/"><img src="IMG/Tu-carrera-digital-general.png" alt=""/></a>
+      </div>
+
+      <div class="seccionEnlaces">
+
+        <div class="seccionLogin">
+         <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx">Login Alumnos</a>
+         <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">Login Empresas</a>
+        </div>
+
+        <div class="seccionBarra">
+         
+         <a href="https://www.tucarreradigital.es/zona-centro#cursos">Cursos</a>
+         <a href="https://www.tucarreradigital.es/sobre-nosotros">Sobre Nosotros</a>
+         <a class="botonInformate" href="">Infórmate</a>
+        </div>
+
+     </div>
+     
     </header>
 
     <!-- BANER PRINCIPAL -->
@@ -132,7 +137,7 @@
 
     <!-- SECCION PIDENOSLO  -->
 
-    <section class="seccionPidenoslo">
+    <section class="seccionPidenoslo contenedor">
       <h3>¿Te interesa algún otro curso en tu ciudad?</h3>
        <div>
         <a href="#">¡Pídenoslo!</a>
@@ -231,23 +236,27 @@
 
         <div class="cajaContactar">
 
-          <div>
-           <img src="IMG/ico-TLF.png" alt="" />
+          <div class="llamanos">
+           <img src="IMG/ico-TLF.png" class="icon" />
             <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
             <path d="M15 7a2 2 0 0 1 2 2"></path>
             <path d="M15 3a6 6 0 0 1 6 6"></path>
             </svg> -->
-           
-           <p>Llámanos</p>
-           <a href="638024408">638024408</a>
+            <div class="llamanosHijo">
+              <p>Llámanos:</p>
+              <a href="638024408">638024408</a>
+            </div>
           </div>
 
-          <div>
-            <img src="IMG/ico-EMAIL.png" alt="" />
-            <p>Escrísbenos</p>
-            <a href="patric.departearroyo@adecco.com">patric.departearroyo@adecco.com</a>
+          <div class="escribenos">
+            <img src="IMG/ico-EMAIL.png" class="icon"/>
+
+            <div class="escribenosHijo">
+              <p>Escríbenos:</p>
+              <a href="patric.departearroyo@adecco.com">patric.departearroyo@adecco.com</a>
+            </div>
           </div>
 
         </div>
@@ -255,13 +264,22 @@
     </section>
 
 
-    <footer>
-      <a href="#"> cursos zona-centro</a>
-      <a href="https://www.tucarreradigital.es/sobre-nosotros">Sobre nosotros</a>
-      <a href="https://www.tucarreradigital.es/preguntas-frecuentes">Preguntas Frecuentes (FAC)</a>
-      <a href="https://www.tucarreradigital.es/zona-centro/politica-de-cookies">Politica de cookies</a>
-      <a href="https://www.tucarreradigital.es/zona-centro/politica-de-privacidad">Politicas de Privacidad</a>
-      <a href="https://www.tucarreradigital.es/zona-centro/aviso-legal">Aviso Legal</a>
+    <footer class="seccionFinal">
+      <div class="contenedor">
+
+       <div class="enlacesFooter">
+        <a href="#"> cursos zona-centro</a>
+        <a href="https://www.tucarreradigital.es/sobre-nosotros">Sobre nosotros</a>
+       </div>
+
+       <div class="paginasLegales">
+        <a href="https://www.tucarreradigital.es/preguntas-frecuentes">Preguntas Frecuentes (FAC)</a>
+        <a href="https://www.tucarreradigital.es/zona-centro/politica-de-cookies">Politica de cookies</a>
+        <a href="https://www.tucarreradigital.es/zona-centro/politica-de-privacidad">Politicas de Privacidad</a>
+        <a href="https://www.tucarreradigital.es/zona-centro/aviso-legal">Aviso Legal</a>
+       </div>
+
+      </div>
     </footer>
 
 

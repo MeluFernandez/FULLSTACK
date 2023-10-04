@@ -152,3 +152,135 @@
     justify-content: flex-start;
     align-items: end;
 }
+
+/* EJERCICIOS DE REPASO DISPLAY  */
+
+/* EJEMPLO 1 */
+
+.porcentajes{
+    display: flex;
+}
+
+.porcentaje1{
+    width: 20%; /*ES LO MISMO QUE PONER FLEX:1 y max-width: 200px;*/
+    border: 2px solid black;
+    text-align: center;
+}
+
+.porcentaje2{
+    width: 30%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.porcentaje3{
+    width: 50%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* EJEMPLO 2 */
+
+.altura {
+    display: flex;
+    flex-direction: column;
+}
+
+ .altura1{
+    height: 100px;
+    background-color: blue;
+}
+
+.altura2{
+    height: 200px;
+    background-color: green;
+}
+
+/* EJEMPLO 3 */
+
+.cajasconporcentajes {
+    display: flex;
+}
+
+.caja1{
+    width: 40%;
+    border: 2px solid black;
+}
+
+.caja2{
+    width: 60%;
+    border: 2px solid black;
+    display: flex;
+}
+
+.caja2 .parrafo1{
+    width: 30%;
+    border: 2px solid black;
+}
+
+.caja2 .parrafo2{
+    width: 70%;
+    border: 2px solid black;
+}
+
+/* EJERCICIO PARA PRACTICAR MEDIA QUERIES */
+
+@media (max-width:350px) {
+    .mediaQueries{
+        height: 500px;
+        background-color: green;
+    }
+}
+
+@media (min-width:350px) and (max-width:616px) {
+    .mediaQueries{
+        height: 500px;
+        background-color: red;
+    }
+}
+
+@media (min-width:616px) and (max-width:933px) {
+     .mediaQueries{
+        height: 500px;
+        background-color: blue;
+    }
+}
+
+@media (min-width:933px) and (max-width:1131px) {
+    .mediaQueries{
+        height: 500px;
+        background-color: yellow;
+    }
+}
+
+@media (min-width:1131px) {
+    .mediaQueries{
+        height: 500px;
+        background-color: brown;
+    }
+}
+
+
+/* EJERCICIO ABSOLUTE Y RELATIVE */
+
+.ejercicioAR{
+    height: 500px;
+    background-color: blue;
+    position: relative; /*RELATIVE ES EL QUE SE QUEDA ESTATICO*/
+    background-image: linear-gradient(to top, red 50%, blue 80%); /*primero el sentido que va a tomar: to top va hacia arriba, donde empieza el color y distancia hasta que empiece el color, el color con que termina y la distancia que hay hasta que termine*/
+    -webkit-box-shadow: 53px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 53px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 53px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.ejercicioAR div{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    top: 250px;
+    right: 0;
+    position: absolute; /*ABSOLUTE ES EL QUE SE MUEVE*/
+    
+}
+
