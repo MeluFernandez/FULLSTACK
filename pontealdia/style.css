@@ -284,3 +284,62 @@ box-shadow: 53px 10px 5px 0px rgba(0,0,0,0.75);
     
 }
 
+/* EJERCICIO GRID */
+
+/* EJERCICIO 1 */
+
+.ejercicioGrid1 div {
+    border: 1px solid black;
+}
+
+.ejercicioGrid1 {
+    display: grid;
+    grid-template-rows: 200px 300px;
+    grid-template-columns: 20% 30% 50%;
+   
+}
+
+/* EJERCICIO 2 */
+
+.ejercicioGrid2 div {
+    border: 1px solid black;
+}
+
+.ejercicioGrid2 {
+    display: grid;
+    grid-template-rows: 50px 300px 100px 200px;
+    grid-template-columns: 80% 250px;
+    /* grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr; */
+    
+}
+
+/* EJERCICIO FRACCIONES 3 */
+
+.ejercicioFracciones div {
+    border: 10px solid black;
+}
+
+.ejercicioFracciones {
+    display: grid;
+    height: 500px;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+    grid-template-columns: 1fr 3fr 2fr 1.5fr;
+}
+
+/* EJERCICIO REPEAT 4 */
+
+.ejercicioRepeat div {
+    border: 1px solid red;
+}
+
+.ejercicioRepeat {
+    display: grid;
+    height: 300px;
+    /* grid-template-rows:2fr 2fr;
+    grid-template-columns: 1fr 1fr; */
+    grid: 2fr 2fr/ 1fr 1fr;
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    gap: 20px;
+}

@@ -148,17 +148,17 @@ SELECTOR MULTIPLE
 
 /* ESTILOS GENERICOS */
 
-.contenedor{
+/* .contenedor{
     max-width: 88%;
     /* margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto; */
-    /* margin: 0 auto 0 auto */
+    /* margin: 0 auto 0 auto 
     margin: 0 auto;
-}
+} */
 
-/* @media (min-width:1140px){
+@media (min-width:1140px){
     .contenedor{
         max-width: 88%;
         margin: 0 auto;
@@ -177,7 +177,7 @@ SELECTOR MULTIPLE
         max-width: 90%;
         margin: 0 auto;
     }
-} */
+}
 
 
 
@@ -193,6 +193,7 @@ SELECTOR MULTIPLE
     display: flex;
     flex-direction: column;
 }
+
 
 .seccionLogin{
     display: flex;
@@ -249,6 +250,15 @@ SELECTOR MULTIPLE
     justify-content: end;
 }
 
+@media (max-width:768px){
+    .seccionHeader{
+        flex-direction: column;
+    }
+    .seccionImagen,.seccionEnlaces{
+        max-width: 100%;
+        align-items: center;
+    }
+}
 
 /* ESTILOS PARA EL MAIN */
 .fondoMain{
@@ -426,7 +436,6 @@ h1:after {
 @media (max-width:768px) {
     .cursosOfertados{
         flex-direction: column;
-        align-items: center;
     }
 }
 
@@ -438,6 +447,15 @@ h1:after {
     flex-direction: column;
     justify-content: space-between;
     min-height: 300px; /*LO MINIMO ES 300*/
+}
+
+.cursosOfertados div h2{
+    color: white;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    margin-bottom: 22px;
 }
 
 @media (max-width:1140px) {
@@ -457,15 +475,6 @@ h1:after {
     }
 }
 
-.cursosOfertados div h2{
-    color: white;
-    font-size: 2.7rem;
-    text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    font-weight: bold;
-    margin-bottom: 22px;
-}
-
 .cursosOfertados a{
     color: var(--colorPrincipal);
     font-size: 1.4rem;
@@ -476,10 +485,6 @@ h1:after {
     font-weight: 700; /*ANCHO DE LA LETRA PARA QUE SE PONGA NEGRITA*/
     padding: 20px 60px; /*ANCHO DEL FONDO*/
     display: inline-block;
-}
-
-@media (max-width:1140px) {
-
 }
 
 .cursosOfertados a:hover{
@@ -744,13 +749,16 @@ font-family: var(--fuentePrincipal);
 }
 
 .cajaLocalizaciones{
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    /* grid: 1fr/ 1fr 1fr 1fr 1fr; */
+    grid: 1fr/ repeat(4,1fr); /*REPEAT LO USAMOS PARA SIMPLIFICAR EL CODIGO EN VEZ DE PONER 4 VECES 1FR, LO PONEMOS DE ESTA MANERA*/
     padding: 24px 0px;
     
 }
 
 .cajaLocalizaciones div{
-    width: 30%;
+    /* width: 30%; */
     margin-right: 15px;
 }
 
@@ -828,26 +836,30 @@ font-family: var(--fuentePrincipal);
 .cajaContactar a{
     color: var(--colorPrincipal);
     font-weight: 800;
-    text-transform: uppercase;
+    font-size: 1.2rem;
     text-decoration: none;
     font-family: var(--fuentePrincipal);
 }
 
 .cajaContactar .llamanosHijo{
     flex-direction: column;
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .cajaContactar .escribenosHijo{
     flex-direction: column;
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .cajaContactar .icon{
-   height: 60px;
+   height: 40px;
    margin-top: 40px;
    margin-bottom: 40px;
-   margin-left: 40px;
+   margin-left: 20px;
 }
 
 @media (max-width:1140px){
