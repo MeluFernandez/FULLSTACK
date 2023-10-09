@@ -1,14 +1,13 @@
-:root{
---colorPrincipal:#F76666;
---colorSecundario:#02052F;
---fuentePrincipal: 'Open Sans', sans-serif;
---fuenteBotones: "DinBold", sans-serif;
+:root {
+  --colorPrincipal: #f76666;
+  --colorSecundario: #02052f;
+  --fuentePrincipal: "Open Sans", sans-serif;
+  --fuenteBotones: "DinBold", sans-serif;
 }
 
-
 html {
-    font-size: 62.5%; 
-    /* box-sizing: border-box; */
+  font-size: 62.5%;
+  /* box-sizing: border-box; */
 }
 
 /* ESTO ES UNA FUNCION GENERICA PARA DECIRLE QUE SOLO ME TOME EL VALOR DE ALTO Y ANCHO SIN TENER EN CUENTA LOS PADDING Y DEMAS */
@@ -16,12 +15,11 @@ html {
     box-sizing: inherit;
 } */
 
-body{
-    font-size: 16px; /* ESTO ME PERMITE CONSEGUIR 10PX=1REM SIN ESO 16PX=1REM */
-    /* background-color: var(--colorPrincipal); */
-    font-family: var(--fuentePrincipal);
-    /* background-color: red; */ /*ESTO ES UN EJEMPLO PARA LO DEL RESPONSIVE*/
-
+body {
+  font-size: 16px; /* ESTO ME PERMITE CONSEGUIR 10PX=1REM SIN ESO 16PX=1REM */
+  /* background-color: var(--colorPrincipal); */
+  font-family: var(--fuentePrincipal);
+  /* background-color: red; */ /*ESTO ES UN EJEMPLO PARA LO DEL RESPONSIVE*/
 }
 
 /* @media (min-width:900px) (SCREEN)PANTALLA Q QUEREMOS QUE AFECTE {
@@ -35,7 +33,6 @@ body{
         background-color: blue;
     } 
 } */
-
 
 /*
 h1 {
@@ -142,10 +139,6 @@ SELECTOR MULTIPLE
     background-color: var(--colorPrincipal);
 } */
 
-
-
-
-
 /* ESTILOS GENERICOS */
 
 /* .contenedor{
@@ -154,139 +147,135 @@ SELECTOR MULTIPLE
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto; */
-    /* margin: 0 auto 0 auto 
+/* margin: 0 auto 0 auto 
     margin: 0 auto;
 } */
 
-@media (min-width:1140px){
-    .contenedor{
-        max-width: 88%;
-        margin: 0 auto;
-    } 
- }
-
-@media (max-width:1140px) and (min-width:768px){
-    .contenedor{
-        max-width: 80%;
-        margin: 0 auto;
-    }
+@media (min-width: 1140px) {
+  .contenedor {
+    max-width: 88%;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width:768px){
-    .contenedor{
-        max-width: 90%;
-        margin: 0 auto;
-    }
+@media (max-width: 1140px) and (min-width: 768px) {
+  .contenedor {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
-
+@media (max-width: 768px) {
+  .contenedor {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
 
 /* ESTILOS HEADER */
-.seccionHeader{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.seccionHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.seccionEnlaces{
-    display: flex;
-    flex-direction: column;
+.seccionEnlaces {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.seccionLogin{
-    display: flex;
-    justify-content: flex-end;
+.seccionLogin {
+  display: flex;
+  justify-content: flex-end;
 }
 .seccionLogin a {
-    color: var(--colorPrincipal);
-    font-family: var(--fuentePrincipal);
-    margin-left: 7px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.7rem;
+  color: var(--colorPrincipal);
+  font-family: var(--fuentePrincipal);
+  margin-left: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.7rem;
 }
 
-
-.seccionLogin a:hover{
-    text-decoration: underline;
+.seccionLogin a:hover {
+  text-decoration: underline;
 }
-
 
 .seccionBarra a {
-    color: var(--colorSecundario);
-    font-family: var(--fuentePrincipal);
-    margin-left: 7px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.7rem;
-    display: inline-block;
+  color: var(--colorSecundario);
+  font-family: var(--fuentePrincipal);
+  margin-left: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.7rem;
+  display: inline-block;
 }
 
-.seccionBarra a:hover{
-    text-decoration: underline;
+.seccionBarra a:hover {
+  text-decoration: underline;
 }
 
-.botonInformate{
-    background-color: var(--colorPrincipal);
-    padding: 0.6rem 1.5rem;
-    border-radius: 4rem;
-    color: white !important;
+.botonInformate {
+  background-color: var(--colorPrincipal);
+  padding: 0.6rem 1.5rem;
+  border-radius: 4rem;
+  color: white !important;
 }
 
-.botonInformate:hover{ 
-    background-color: #17a2b8 !important;
-    text-decoration: none !important;
+.botonInformate:hover {
+  background-color: #17a2b8 !important;
+  text-decoration: none !important;
 }
 
-.seccionImagen{
-    display: flex;
+.seccionImagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+@media (max-width: 768px) {
+  .seccionHeader {
     flex-direction: column;
-    justify-content: end;
-}
-
-@media (max-width:768px){
-    .seccionHeader{
-        flex-direction: column;
-    }
-    .seccionImagen,.seccionEnlaces{
-        max-width: 100%;
-        align-items: center;
-    }
+  }
+  .seccionImagen,
+  .seccionEnlaces {
+    max-width: 100%;
+    align-items: center;
+  }
 }
 
 /* ESTILOS PARA EL MAIN */
-.fondoMain{
-    background-image: url(../IMG/11641893944_banner_zona_centro.png);
-    background-position: top left;
-    background-size: cover;
-    padding: 80px 0 180px 0;
-    border-radius: 0;
+.fondoMain {
+  background-image: url(../IMG/11641893944_banner_zona_centro.png);
+  background-position: top left;
+  background-size: cover;
+  padding: 80px 0 180px 0;
+  border-radius: 0;
 }
 
-.margenDerecho{
-    margin-right: 33%;
+.margenDerecho {
+  margin-right: 33%;
 }
 
-@media (max-width:1140px) {
-    .margenDerecho{
-        margin-right: 0;
-    }
+@media (max-width: 1140px) {
+  .margenDerecho {
+    margin-right: 0;
+  }
 }
 
-h1{
-    background: rgba(248, 102, 102, 0.65);
-    font-family: var(--fuentePrincipal) ;
-    font-weight: 800;
-    font-size: 4.7rem;
-    margin-bottom: 10px;
-    padding: 35px;
-    color: white;
+h1 {
+  background: rgba(248, 102, 102, 0.65);
+  font-family: var(--fuentePrincipal);
+  font-weight: 800;
+  font-size: 4.7rem;
+  margin-bottom: 10px;
+  padding: 35px;
+  color: white;
 }
 
 /* h1:before {
@@ -297,219 +286,211 @@ h1:after {
     content: "texto con pseudoelemento";
 }  */
 
-.fondoMain a{
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    padding: 24px 94px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: var(--fuenteBotones);
-    font-weight: 700;
-    font-size: 1.4rem;
+.fondoMain a {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  padding: 24px 94px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--fuenteBotones);
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-@media (max-width:768px) {
-    .fondoMain a{
-        padding: 24px 70px;
-    }
+@media (max-width: 768px) {
+  .fondoMain a {
+    padding: 24px 70px;
+  }
 }
 
-.fondoMain a:hover{
-    color: var(--colorPrincipal);
-    background-color: white;
-    border: 2px solid var(--colorPrincipal); /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
+.fondoMain a:hover {
+  color: var(--colorPrincipal);
+  background-color: white;
+  border: 2px solid var(--colorPrincipal); /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
 }
 
-
-.flexMain{
-    display: flex;
-    flex-direction: row; /*POR DEFECTO ES ROW*/
-    justify-content: space-between;
+.flexMain {
+  display: flex;
+  flex-direction: row; /*POR DEFECTO ES ROW*/
+  justify-content: space-between;
 }
 
-.flexMain img{
-    margin-right: 10px;
+.flexMain img {
+  margin-right: 10px;
 }
 
 /* ESTILOS PARA LA IMAGEN DE CORPORACIONES */
-.flexLogos {    
-    background-color: white;
-    display: flex;
-    flex-direction: row; /*ES OPCIONAL POR QUE VIENE POR DEFECTO EN FILA*/
-    justify-content: space-evenly; /*ALINACION IMAGENES*/
-    align-items: center; /*PARA CENTRAR LOS DOS*/
-    padding: 20px; /*AGRANDAR Y ACHICAR EL CONTENIDO DE ADENTRO*/
-    margin-top: -120px; /*MARGEN DE ARRIBA PARA ALINEARLO, ES UNA MALA PRACTICA PARA EL CEO CON EL NUMERO NEGATIVO*/
-    border-radius: 12px; /*DAR FORMA CIRCULAR*/
+.flexLogos {
+  background-color: white;
+  display: flex;
+  flex-direction: row; /*ES OPCIONAL POR QUE VIENE POR DEFECTO EN FILA*/
+  justify-content: space-evenly; /*ALINACION IMAGENES*/
+  align-items: center; /*PARA CENTRAR LOS DOS*/
+  padding: 20px; /*AGRANDAR Y ACHICAR EL CONTENIDO DE ADENTRO*/
+  margin-top: -120px; /*MARGEN DE ARRIBA PARA ALINEARLO, ES UNA MALA PRACTICA PARA EL CEO CON EL NUMERO NEGATIVO*/
+  border-radius: 12px; /*DAR FORMA CIRCULAR*/
 }
 
-@media (max-width:1140px) and (min-width:768px) {
-    [src="IMG/Logos-oficiales.png"]{
-        max-width: 70%;
-    }
+@media (max-width: 1140px) and (min-width: 768px) {
+  [src="IMG/Logos-oficiales.png"] {
+    max-width: 70%;
+  }
 
-    [src="IMG/Logos-Adeco.png"]{
-        max-width: 30%;
-    }
+  [src="IMG/Logos-Adeco.png"] {
+    max-width: 30%;
+  }
 }
 
-@media (max-width:768px){
-    .flexLogos{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .flexLogos img{
-        max-width: 100%;
-        padding: 20px;
-    }
+@media (max-width: 768px) {
+  .flexLogos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexLogos img {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
-
-
 
 /* ESTILOS SECCION CURSOS */
-.seccionCursos h3{
-    text-align: center;
-    color: var(--colorPrincipal);
-    font-family: var(--fuentePrincipal);
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    margin: 40px 0px;
+.seccionCursos h3 {
+  text-align: center;
+  color: var(--colorPrincipal);
+  font-family: var(--fuentePrincipal);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin: 40px 0px;
 }
 
-.seccionCursos>h2{
-    margin-bottom: 72px;
-    text-align: center;
-    color: var(--colorSecundario);
-    font-family: var(--fuentePrincipal);
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 2.7rem;
+.seccionCursos > h2 {
+  margin-bottom: 72px;
+  text-align: center;
+  color: var(--colorSecundario);
+  font-family: var(--fuentePrincipal);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2.7rem;
 }
 
 .botonesCursos {
-    display: flex;
-    flex-direction: row; /*ES OPCIONAL POR QUE VIENE POR DEFECTO EN FILA*/
-    justify-content: center;
-    margin-bottom: 105px;
-
+  display: flex;
+  flex-direction: row; /*ES OPCIONAL POR QUE VIENE POR DEFECTO EN FILA*/
+  justify-content: center;
+  margin-bottom: 105px;
 }
 
-.botonVerTodo{
-    background-color: var(--colorPrincipal);
-    color: white;
-    font-family: var(--fuentePrincipal);
-    font-size: 1.4rem;
-    padding: 12px 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    border: 1px solid var(--colorPrincipal);
+.botonVerTodo {
+  background-color: var(--colorPrincipal);
+  color: white;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.4rem;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border: 1px solid var(--colorPrincipal);
 }
 
-
-.botonMadrid{
-    background-color: white;
-    color: var(--colorSecundario);
-    font-family: var(--fuentePrincipal);
-    font-size: 1.4rem;
-    padding: 10px 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 800;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    border: 1px solid var(--colorPrincipal);
+.botonMadrid {
+  background-color: white;
+  color: var(--colorSecundario);
+  font-family: var(--fuentePrincipal);
+  font-size: 1.4rem;
+  padding: 10px 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border: 1px solid var(--colorPrincipal);
 }
 
-.cursosOfertados{
-    margin-bottom: 120px;
-    display: flex;
-    flex-direction: row; /*ES OPCIONAL POR QUE VIENE POR DEFECTO EN FILA*/
-    justify-content: space-between;
+.cursosOfertados {
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row; /*ES OPCIONAL POR QUE VIENE POR DEFECTO EN FILA*/
+  justify-content: space-between;
 }
 
-@media (max-width:768px) {
-    .cursosOfertados{
-        flex-direction: column;
-    }
-}
-
-.cursosOfertados>div{
-    max-width: 50%;
-    flex: 2;
-    padding: 40px 60px;
-    display: flex;
+@media (max-width: 768px) {
+  .cursosOfertados {
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 300px; /*LO MINIMO ES 300*/
+  }
 }
 
-.cursosOfertados div h2{
-    color: white;
-    font-size: 2.7rem;
-    text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    font-weight: bold;
-    margin-bottom: 22px;
+.cursosOfertados > div {
+  max-width: 50%;
+  flex: 2;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px; /*LO MINIMO ES 300*/
 }
 
-@media (max-width:1140px) {
-    .cursosOfertados>div{
-        padding: 20px 30px;
-    }
+.cursosOfertados div h2 {
+  color: white;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-weight: bold;
+  margin-bottom: 22px;
 }
 
-@media (max-width:768px) {
-    .cursosOfertados>div{
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 15px;
-        margin-top: 15px;
-        max-width: 100%;
-
-    }
+@media (max-width: 1140px) {
+  .cursosOfertados > div {
+    padding: 20px 30px;
+  }
 }
 
-.cursosOfertados a{
-    color: var(--colorPrincipal);
-    font-size: 1.4rem;
-    background-color: white;
-    border: 2px solid white;
-    text-decoration: none; /*QUITAR LINEA*/
-    text-transform: uppercase; /*MAYUSCULA */
-    font-weight: 700; /*ANCHO DE LA LETRA PARA QUE SE PONGA NEGRITA*/
-    padding: 20px 60px; /*ANCHO DEL FONDO*/
-    display: inline-block;
+@media (max-width: 768px) {
+  .cursosOfertados > div {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    max-width: 100%;
+  }
 }
 
-.cursosOfertados a:hover{
-    color: white;
-    background-color: var(--colorPrincipal);
-    border: 2px solid white; /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
+.cursosOfertados a {
+  color: var(--colorPrincipal);
+  font-size: 1.4rem;
+  background-color: white;
+  border: 2px solid white;
+  text-decoration: none; /*QUITAR LINEA*/
+  text-transform: uppercase; /*MAYUSCULA */
+  font-weight: 700; /*ANCHO DE LA LETRA PARA QUE SE PONGA NEGRITA*/
+  padding: 20px 60px; /*ANCHO DEL FONDO*/
+  display: inline-block;
 }
 
-.marketing{
-    background-image: url(../IMG/Curso-marketing-digital-centro.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-right: 15px;
+.cursosOfertados a:hover {
+  color: white;
+  background-color: var(--colorPrincipal);
+  border: 2px solid white; /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
 }
 
-.videoJuegos{
-    background-image: url(../IMG/Curso-programacion-videojuegos-centro.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-right: 15px;
+.marketing {
+  background-image: url(../IMG/Curso-marketing-digital-centro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 15px;
 }
 
-
+.videoJuegos {
+  background-image: url(../IMG/Curso-programacion-videojuegos-centro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 15px;
+}
 
 /* .ejercicioMax{
     background-color: red;
@@ -517,44 +498,43 @@ h1:after {
     height: 200px;
 } */
 
-
 /* ESTILOS SECCION PIDENOSLO */
 
-.seccionPidenoslo{
-    margin-bottom: 150px; /*PONE MARGEN SOLO ABAJO*/
+.seccionPidenoslo {
+  margin-bottom: 150px; /*PONE MARGEN SOLO ABAJO*/
 }
 
-.seccionPidenoslo h3{
-    margin-bottom: 22px;
-    text-align: center;
-    color: var(--colorSecundario);
-    font-family: var(--fuentePrincipal);
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 1.7rem;
+.seccionPidenoslo h3 {
+  margin-bottom: 22px;
+  text-align: center;
+  color: var(--colorSecundario);
+  font-family: var(--fuentePrincipal);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.7rem;
 }
 
-.seccionPidenoslo a{
-    color: white;
-    font-size: 1.4rem;
-    background-color: var(--colorPrincipal);
-    border-radius: 95px;
-    display: inline-block;
-    font-weight: 700;
-    text-transform: uppercase; 
-    text-decoration: none;
-    padding: 20px 40px;
-    margin-top: 20px;
+.seccionPidenoslo a {
+  color: white;
+  font-size: 1.4rem;
+  background-color: var(--colorPrincipal);
+  border-radius: 95px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 40px;
+  margin-top: 20px;
 }
 
-.seccionPidenoslo a:hover{
-    background-color: var(--colorSecundario);
-    text-decoration: underline;
+.seccionPidenoslo a:hover {
+  background-color: var(--colorSecundario);
+  text-decoration: underline;
 }
 
-.seccionPidenoslo div{
-    display: flex;
-    justify-content: center;
+.seccionPidenoslo div {
+  display: flex;
+  justify-content: center;
 }
 
 /*.ejercicioColumna{
@@ -566,358 +546,346 @@ h1:after {
 /* ESTILO SECCION VIDEO */
 
 .seccionVideo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 
-@media (max-width:1140px) {
-    .seccionVideo iframe {
-        width: 100%;
-        height: 350px;
-    }
+@media (max-width: 1140px) {
+  .seccionVideo iframe {
+    width: 100%;
+    height: 350px;
+  }
 }
 
-@media (max-width:768px) {
-    .seccionVideo iframe {
-        width: 100%;
-        height: 200px;
-    }
+@media (max-width: 768px) {
+  .seccionVideo iframe {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
-.seccionParaQuien{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
+.seccionParaQuien {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
 }
 
-@media (max-width:1140px) {
-    .seccionParaQuien {
-        flex-direction: column;
-    }
-}
-
-
-.seccionParaQuien>div{
-    flex: 1;
-    max-width: 50%;
-}
-
-@media (max-width:1140px) {
-    .secccionParaQuien>div {
-       flex: 1;
-       max-width: 100%;
-}
-}
-
-.seccionParaQuien h3{
-    color: var(--colorPrincipal);
-    font-family: var(--fuentePrincipal);
-    font-weight: 600;
-    font-size: 1.7rem;
-}
-
-.seccionParaQuien h2{
-    font-family: var(--fuentePrincipal);
-    color: var(--colorSecundario);
-    font-size: 2.7rem;
-    font-weight: 800;
-    margin-bottom: 22px;
-}
-
-.paraQuienIzq{
-    margin-right: 15px;
-}
-
-.seccionParaQuien p{
-    font-family: var(--fuentePrincipal);
-    font-size: 1.5rem;
-    font-weight: 200;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    color: var(--colorSecundario);
-}
-
-.seccionParaQuien span{
-    font-weight: 800;
-}
-
-.paraQuienIzq h4{
-    font-family: var(--fuentePrincipal);
-    color: var(--colorSecundario);
-    font-weight: 800;
-    font-size: 1.5rem;
-    line-height: 1.8;
-}
-
-.paraQuienIzq a{
-    color: var(--colorPrincipal);
-    text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.paraQuienIzq h5{
-    font-family: var(--fuentePrincipal);
-    font-weight: 800;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: var(--colorSecundario);
-}
-
-.paraQuienIzq .botonInfografia{
-    background-color: var(--colorPrincipal);
-    color: white;
-    text-decoration: none;
-    padding: 20px 40px;
-    display: inline-block;
-}
-
-.paraQuienDer{
-    display: flex;
+@media (max-width: 1140px) {
+  .seccionParaQuien {
     flex-direction: column;
-    margin-left: 45px;
-    padding-top: 90px;
+  }
 }
 
-.superior{
-    background-color: var(--colorPrincipal);
-    padding: 90px 30px;
+.seccionParaQuien > div {
+  flex: 1;
+  max-width: 50%;
 }
 
-.superior h5{
-    font-family: var(--fuentePrincipal);
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 10px;
+@media (max-width:1140px) {
+  .seccionParaQuien > div {
+    flex: 1;
+    max-width: 100%;
+  }
+}
+
+.seccionParaQuien h3 {
+  color: var(--colorPrincipal);
+  font-family: var(--fuentePrincipal);
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.seccionParaQuien h2 {
+  font-family: var(--fuentePrincipal);
+  color: var(--colorSecundario);
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.paraQuienIzq {
+  margin-right: 15px;
+}
+
+.seccionParaQuien p {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: var(--colorSecundario);
+}
+
+.seccionParaQuien span {
+  font-weight: 800;
+}
+
+.paraQuienIzq h4 {
+  font-family: var(--fuentePrincipal);
+  color: var(--colorSecundario);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.paraQuienIzq a {
+  color: var(--colorPrincipal);
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.paraQuienIzq h5 {
+  font-family: var(--fuentePrincipal);
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--colorSecundario);
+}
+
+.paraQuienIzq .botonInfografia {
+  background-color: var(--colorPrincipal);
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+  display: inline-block;
+}
+
+.paraQuienDer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  padding-top: 90px;
+}
+
+.superior {
+  background-color: var(--colorPrincipal);
+  padding: 90px 30px;
+}
+
+.superior h5 {
+  font-family: var(--fuentePrincipal);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .superior .destacarAzul {
-    color: var(--colorSecundario);
+  color: var(--colorSecundario);
 }
 
-.superior span{
-    color: black;
+.superior span {
+  color: black;
 }
 
-.inferior{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -60px;
-    margin-right: 30px;
+.inferior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -60px;
+  margin-right: 30px;
 }
 
-.inferior h4{
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    padding: 40px 30px;
-    text-align: left;
-    width: 250px;
+.inferior h4 {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  padding: 40px 30px;
+  text-align: left;
+  width: 250px;
 }
 
 .inferior h4 span {
-    color: var(--colorPrincipal);
+  color: var(--colorPrincipal);
 }
 
-.inferior img{
-    margin-top: 10px;
-    height: 40px;
-    width: 40px;
+.inferior img {
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
 }
-
-
-
-
 
 /* ESTILOS LOCALIZACIONES */
 
-.localizaciones{
-background-color: black;
-color: white;
-padding: 90px 0;
-text-transform: uppercase; 
-font-family: var(--fuentePrincipal);
+.localizaciones {
+  background-color: black;
+  color: white;
+  padding: 90px 0;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
 }
 
-.cajaLocalizaciones{
-    /* display: flex; */
-    display: grid;
-    /* grid: 1fr/ 1fr 1fr 1fr 1fr; */
-    grid: 1fr/ repeat(4,1fr); /*REPEAT LO USAMOS PARA SIMPLIFICAR EL CODIGO EN VEZ DE PONER 4 VECES 1FR, LO PONEMOS DE ESTA MANERA*/
-    padding: 24px 0px;
-    
+.cajaLocalizaciones {
+  /* display: flex; */
+  display: grid;
+  /* grid: 1fr/ 1fr 1fr 1fr 1fr; */
+  grid: 1fr / repeat(4, 1fr); /*REPEAT LO USAMOS PARA SIMPLIFICAR EL CODIGO EN VEZ DE PONER 4 VECES 1FR, LO PONEMOS DE ESTA MANERA*/
+  padding: 24px 0px;
 }
 
-.cajaLocalizaciones div{
-    /* width: 30%; */
-    margin-right: 15px;
+.cajaLocalizaciones div {
+  /* width: 30%; */
+  margin-right: 15px;
 }
-
-
 
 @media (max-width:1140px) {
-    .cajaLocalizaciones div{
-        width: 50%;
-    }
+  .cajaLocalizaciones {
+    /* width: 50%; */
+    grid: 1fr / 1fr 1fr;
+  }
 }
 
-@media (max-width:768px){
-    .cajaLocalizaciones{
-        flex-wrap: wrap;
-    }
-    .cajaLocalizaciones div{
-        width: 100%;
-    }
+@media (max-width:768px) {
+  .cajaLocalizaciones {
+    /* flex-wrap: wrap; */
+  }
+  .cajaLocalizaciones /*div*/{
+    /* width: 100%; */
+    grid: 1fr 1fr/ 1fr;
+  }
 }
-
-
 
 /* ESTILOS CONTACTAR */
 
-.seccionContactar{
-    background-color: var(--colorPrincipal);
-    padding-top: 90px;
-    padding-bottom: 130px;
-    
+.seccionContactar {
+  background-color: var(--colorPrincipal);
+  padding-top: 90px;
+  padding-bottom: 130px;
 }
 
-.seccionContactar h3{
-    font-weight: 300;
-    text-transform: uppercase; 
-    font-family: var(--fuentePrincipal);
-    color: white;
-    font-size: 17px;
-    margin-bottom: 22px;
+.seccionContactar h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  color: white;
+  font-size: 17px;
+  margin-bottom: 22px;
 }
 
-.seccionContactar h2{
-    color: white;
-    margin-bottom: 22px;
-    font-weight: 300;
-    text-transform: uppercase; 
-    font-family: var(--fuentePrincipal);
-    font-weight: 800;
-
+.seccionContactar h2 {
+  color: white;
+  margin-bottom: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-weight: 800;
 }
 
-
-.cajaContactar{
-    display: flex;
+.cajaContactar {
+  display: flex;
 }
 
-
-.cajaContactar div{
-    width: 50%;
-    background-color: white;
-    margin-right: 15px;
-    border-radius: 0.55rem;
-    display: flex;
+.cajaContactar div {
+  width: 50%;
+  background-color: white;
+  margin-right: 15px;
+  border-radius: 0.55rem;
+  display: flex;
 }
 
-.cajaContactar p{
-    color: var(--colorSecundario);
-    font-size: 1.4rem;
-    margin-top: 0;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
+@media (max-width:1140px) {
+ .cajaContactar div{
+    width: 100%;
+ }
 }
 
-
-.cajaContactar a{
-    color: var(--colorPrincipal);
-    font-weight: 800;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-family: var(--fuentePrincipal);
+.cajaContactar p {
+  color: var(--colorSecundario);
+  font-size: 1.4rem;
+  margin-top: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
 }
 
-.cajaContactar .llamanosHijo{
+.cajaContactar a {
+  color: var(--colorPrincipal);
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: var(--fuentePrincipal);
+}
+
+.cajaContactar .llamanosHijo {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cajaContactar .escribenosHijo {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cajaContactar .icon {
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1140px) {
+  .cajaContactar {
     flex-direction: column;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
+  }
 
-.cajaContactar .escribenosHijo{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.cajaContactar .icon{
-   height: 40px;
-   margin-top: 40px;
-   margin-bottom: 40px;
-   margin-left: 20px;
-}
-
-@media (max-width:1140px){
-    .cajaContactar {
-        flex-direction: column;
-}
-
-.llamanos, .escribenos {
+  .llamanos,
+  .escribenos {
     max-width: 100%;
-    margin:10px 0px;
-}
+    margin: 10px 0px;
+  }
 
-.cajaContactar .icon{
+  .cajaContactar .icon {
     height: 60px;
-}
+  }
 }
 
 /* ESTILOS FOOTEER */
 
-.seccionFinal{
-    background-color: #f3f3f5;
+.seccionFinal {
+  background-color: #f3f3f5;
 }
-.seccionFinal .contenedor{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.enlacesFooter{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid var(--colorSecundario);
+.seccionFinal .contenedor {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.enlacesFooter a{
-    font-weight: 800;
-    color: var(--colorSecundario);
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    margin-right: 50px;
-    line-height: 1.2;
+.enlacesFooter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--colorSecundario);
 }
 
-.paginasLegales{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid var(--colorSecundario);
+.enlacesFooter a {
+  font-weight: 800;
+  color: var(--colorSecundario);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  margin-right: 50px;
+  line-height: 1.2;
 }
 
-.paginasLegales a{
-    color: var(--colorSecundario);
-    padding: 20px;
-    margin-right: 80px;
-    font-size: 1.4rem;
+.paginasLegales {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--colorSecundario);
 }
 
-
-
-
+.paginasLegales a {
+  color: var(--colorSecundario);
+  padding: 20px;
+  margin-right: 80px;
+  font-size: 1.4rem;
+}
