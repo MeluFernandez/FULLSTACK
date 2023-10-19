@@ -275,7 +275,7 @@ let aprendiendo = (numero=1) => numero+7;
 let resultadoAprendiendo = aprendiendo(12)
 console.log(resultadoAprendiendo)
 
-/*EJERCICIO
+/*EJERCICIO 1
 
 CONVERTIR CADA UNA DE LAS SIGUIENTES FUNCIONES EN ARROW FUNCTION
 COPIAR EL ARRAY CARRITO DEL FINAL DEL ARCHIVO 04-arrays.JS*/
@@ -289,7 +289,7 @@ console.log("USO DE FILTER CON ARROW FUNCTION", resultado);
 
 
 /*
-EJERCICIO 1.
+EJERCICIO 2
 CREAR UNA FUNCIÓN QUE SUME 3 NUMEROS DADOS. PONERLA CON EXPRESION, DECLARACIÓN Y COMO FUNCIÓN DE FLECHA
 sumaDeclaracion
 sumaExpresion
@@ -315,7 +315,7 @@ let sumarFlecha = (n1,n2,n3) => console.log(n1+n2+n3);
 sumarFlecha(2,5,7)
 
 /*
-EJERCICIO 2
+EJERCICIO 3
 CREAR UNA FUNCIÓN QUE BUSQUE ELEMENTOS DE UN ARRAY NUMEROS.
 PONERLA CON EXPRESION, DECLARACIÓN Y COMO FUNCIÓN DE FLECHA
 buscaExpresion
@@ -348,4 +348,42 @@ buscaExpresion(numeros,2)
 let buscaFlecha = (array,numeroABuscar) => console.log(array.includes(numeroABuscar))
 
 buscaFlecha(numeros,3)
+
+/*EJERCICIO 4
+CREAR UNA FUNCIÓN DE FLECHA QUE DADOS 2 PARÁMETROS 
+ME DE 10 VECES LA SUMA DE AMBOS
+*/
+
+let operacionMatematica = (n1,n2) => console.log((n1+n2)*10)
+
+operacionMatematica(2,4);
+
+
+/*EJERCICIO 5
+CREAR UNA FUNCIÓN DE FLECHA QUE DADO DOS PARÁMETROS
+ME INDIQUE EL NÚMERO DE CARACTERES DE LOS DOS
+*/
+
+// let longitudParametros = (p1,p2) => (p1.length)+(p2.length);
+
+// console.log(longitudParametros("hola","chau"));
+
+let longitudParametros = (p1,p2) => console.log("Resultado del ejercicio",(p1+p2).length);
+
+longitudParametros("hola","chau");
+
+/*EJERCICIO 6
+ CREAR UNA FUNCIÓN DE FLECHA QUE QUITE EL ULTIMO ELEMENTO DEL FINAL
+ DE UN ARRAY NUEVO QUE CREEMOS CADA VEZ QUE LA LLAMAMOS.*/
+
+ let quitarUltimoElemento = (array) => array.pop();
+
+ let elementos = [10,20,30]
+ quitarUltimoElemento(elementos)
+ quitarUltimoElemento(elementos)
+  console.log(elementos)
+
+
+
+
 
