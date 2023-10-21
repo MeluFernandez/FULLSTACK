@@ -100,7 +100,7 @@
     */
 
 
-    let notaExamen = 7.5;
+    let notaExamen = 10;
 
     if(notaExamen>=9){
         console.log("ERES SOBRESALIENTE")
@@ -170,7 +170,7 @@
     multiplo(10);
 
 
-    /*EJERCICIO4
+    /*EJERCICIO 4
     CREAR UNA ESTRUCTURA DE CONTROL CON SWITCH QUE ME COMPARE SI
     UN NÚMERO + 10 ES:
     =9
@@ -195,5 +195,226 @@
         default: console.log("RESTO DE POSIBILIDADES")
     }
 
+    /*ITERADORES/BUCLES
+    FOR
+    WHILE
+    DO WHILE
+    
+    
+    FOR LOOP (BUCLE FOR) ITERADOR
+    VA A ESTAR EJECUTANDO EL CODIGO HASTA QUE SE DEJE DE
+    CUMPLIR UNA CONDICIÓN
+     
+    */
+    
+    console.log(1);
+    console.log(2);
+    console.log(3);
+    console.log(4);
+    
+    // IRÁ EJECUTANDO EL CÓDIGO SIEMPRE QUE SE CUMPLE LA CONDICION
+    
+    for (let i = 0; i <= 3; i++) {
+        //i === ÍNDICE, SUELE EMPEZAR POR 0, PUES SE USA MUCHO PARA
+        //RECORRER ARREGLOS
+        //i<=3 SERÁ LA CONDICIÓN. SE EJECUTA MIENTRAS SE CUMPLE
+        //i++ ACTUALIZADOR
+        console.log(i);
+    
+    }
 
+    //EJERCICIO MOSTRAR DEL 100 AL 200 DE UNO EN UNO
+
+    for (let i=100; i<=200; i++) {
+        console.log(i)
+    }
+
+    /*EJERCICIO 5
+    MOSTRAR EN ORDEN DESCENDENTE DEL 100 HASTA EL 0, PERO
+    DE 5 EN 5
+    INCLUIDOS AMBOS*/
+
+    for (let i=100; i>=0; i-=5){
+        console.log(i)
+    }
+
+    /*EJERCICIO 6
+    MOSTRAR DEL 1 AL 20 TODOS LOS NÚMEROS PARES
+    INCLUIDOS AMBOS
+    NOTA: i%2===0 ME DA LA CONDICIÓN DE PAR*/
+
+    for (let i=1;i<=20;i++){
+        if(i%2===0){
+            console.log(i)
+        }
+    }
+
+    /* VAMOS A RECORRER ARRAY DE NUMEROS
+    EN QUE POSICION INICIA UN ARRAY??
+    MOSTRAR LOS OBJETOS DE UNO EN UNO*/
+
+    let arrayNumeros=[1,2,3,4,5,6,7,8,9];
+
+    for (let i=0;i<arrayNumeros.length;i++){
+        console.log(arrayNumeros[i])
+    }
+
+    /* EJERCICIO 7 VAMOS A RECORRER ESE CARRITO DE COMPRAS
+    EN QUE POSICION INICIA UN ARRAY??
+    MOSTRAR LOS OBJETOS DE UNO EN UNO*/
+
+
+    let carrito = [{nombre:"remera",precio: 2},{nombre:"pantalon",precio: 3},{nombre:"gorra",precio: 4},{nombre:"zapatilla",precio: 10}];
+
+    for (let i=0; i<carrito.length; i++){
+        console.log(carrito[i]);
+        console.log(carrito[i].nombre);
+        console.log(carrito[i].precio);
+    }
+
+/*WHILE LOOP. ITERADOR
+MUY SIMILAR AL FOR, SINTAXIS UN POCO DIFERENTE
+SE EJECUTA MIENTRAS UNA CONDICION SEA EVALUADA COMO
+VERDADERA
+*/
+
+let i = 0;
+// EL INDICE VA FUERA
+// LA CONDICION SI VA DENTRO
+// EL INCREMENTO VA EN EL CUERPO DE LA FUNCION
+
+while (i < 10) {
+    console.log(i);
+    i++; // ACTUALIZADOR
+}
+
+// SI MODIFICAMOS EL ÍNDICE Y LE DAMOS UN VALOR INICIAL DE 20
+// QUE SUCEDE???
+
+// ESA ES JUSTO LA DIFERENCIA CON EL DO WHILE, QUE AL MENOS EJECUTA UNA VEZ
+// AL IGUAL QUE PODEMOS UTILIZAR && O || PERO PARA EL FOR NO NOS DEJA
+
+// DO WHILE
+/*
+
+
+*/
+
+let j = 0;
+
+do {
+    console.log(j);
+    j++;
+} while (j < 10);
+
+// EJECUTA EL CODIGO AL MENOS UNA VEZ Y DESPUES EVALUA
+
+// let j =100
+// do {
+//     console.log(j);
+//     j++;
+// } while (j < 50);
+
+/*
+
+for(let i=0; i<10; i++)             ///////FOR
+{
+    console.log(i)
+}
+
+
+let i=0;                            ///////WHILE
+while(i<10){
+    console.log(i);
+    i++;
+}
+
+
+let i=0;                            ////////DO WHILE
+do{
+    console.log(i);
+    i++;
+}while(i<10)
+*/
+
+/*EJERCICIO 8
+MOSTRAR LOS NUMEROS PARES, PERO HACERLO AHORA CON WHILE
+MOSTRAR DEL 1 AL 20 TODOS LOS NÚMEROS PARES
+INCLUIDOS AMBOS
+NOTA: i%2===0 ME DA LA CONDICIÓN DE PAR
+*/
+
+let k=1 
+while  (k<=20){
+    if(k%2===0){
+        console.log(k); 
+    }
+    k++;
+}
+
+/*EJERCICIO 9
+CREAR UNA FUNCION QUE DADO UN ARGUMENTO ME DIGA SI
+* ES POSITIVO
+* ES NEGATIVO
+* ES =0*/
+
+function confirmacion(x){
+    if(x>0){
+        console.log("ES POSITIVO");
+    }else if(x<0){
+        console.log("ES NEGATIVO");
+    }else {
+        console.log("ES CERO");
+    }
+}
+
+confirmacion(5);
+confirmacion(-8548);
+confirmacion(0);
+
+/*EJERCICIO 10
+CREAR UNA FUNCIÓN QUE DADO UN ARGUMENTO, (NUMERO ENTERO)
+ME DE UNA CUENTA ATRÁS DE LOS NÚMEROS
+*/
+
+function regresion (x){
+for (let i=x; i>=0; i--){
+    console.log(i);
+}
+}
+
+regresion(5);
+
+/*EJERCICIO 11
+CREAR UNA FUNCIÓN QUE DADO UN ARGUMENTO DE ENTRADA N, ME
+DE LA SUMA DE TODOS LOS NUMEROS ENTRE 0 Y N
+*/
+
+let acumulacion = 0
+
+function sumaDeNumeros (x){
+    for (let i=x; i>=0; i--){
+        // (acumulacion+=i); ESTO ES LO MISMO QUE
+        // acumulacion = acumulacion+i ESTO
+        console.log(acumulacion+=i) //EJ: i vale 6 y acumulacion 0 = 6+0 = 6 (subo i = 6) -1 (actu) = 5 / AHORA i vale 5 y acum 6 = 5+6 = 11 (subo i= 5) -1(actu) = 4 / ahora i vale 4 y acum valia 11 = 15...... 
+    // console.log(acumulacion)
+}
+}
+
+sumaDeNumeros(6);
+
+/*EJERCICIO
+USAR WHILE, CREAR UNA FUNCIÓN QUE DADO UN ARGUMENTO
+ME MUESTRE DE MANERA REGRESIVA, EL NUMERO ENTRE 10*/
+
+
+function regresion (n1){
+    let i=0
+    while (n1 >= i){
+        console.log(n1/10);
+        n1--
+    } 
+}
+
+regresion(10);
 

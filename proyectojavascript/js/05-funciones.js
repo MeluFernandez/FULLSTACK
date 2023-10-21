@@ -265,6 +265,10 @@ let triplicarFlecha = (numero=1) => numero*numero*numero;
 let valorTriplicado2 = triplicarFlecha(12);
 console.log(valorTriplicado2)
 
+let sumar = (n1,n2) => (n1+n2)
+
+let valorSumado = sumar(11,20)
+console.log(valorSumado)
 
 /*EJERCICIO
 CREAMOS NUEVO ARROW FUNCTION, aprendiendo, QUE  DEVUELVA UN NUMERO +7 Y LO 
