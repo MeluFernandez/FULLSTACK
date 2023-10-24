@@ -63,3 +63,121 @@ background-color: yellow;
 height: 100px;
 background-color: blue;
 }
+
+
+/*
+h1 {
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    border: 30px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 7em;
+    max-width: 60%;
+}
+
+.h5azul{
+    color: white;
+    background-color: blue;
+}
+
+.SeccionPrueba h5{
+    color: white;
+    background-color: blue;
+}
+
+#projo{
+    color: white;
+    background-color: red;
+}
+
+.SeccionPrueba h3{
+    color: white;
+    background-color: green;
+}
+
+
+
+/* EJERCICIO DE SELECTORES 
+
+SELECTOR DE CLASE
+.primerh3{
+color: red;
+text-transform: uppercase;
+font-size: 3rem;
+text-align: center;
+}
+
+SELECTOR DE CLASE
+#segundoh3{
+color: red;
+text-transform: uppercase;
+font-size: 3rem;
+text-align: center;
+}
+
+SELECTOR DE ELEMENTO
+h6{
+    color: red;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+SELECTOR DE COMBINACION DECENDENTE
+.ejercicioSelectores p{
+    color: red;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+SELECTOR DE ATRIBUTO
+[src="IMG/Logo-Adecco.png"]{
+    background-color: yellow;
+}
+
+SELECTOR DE TODOS LOS HIJOS
+.ejercicioSelectores > a{
+    color: orange;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+SELECTOR MULTIPLE
+#segundoh3, [src="IMG/Logo-Adecco.png"]{
+    background-color: black;
+} */
+/* h1{
+    color:white;
+    font-size: 4.7rem;
+    background-color: rgba(248, 102, 102, 0.65);
+    font-weight: 800;
+    padding: 35px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+} */
+
+/* .ejercicioColor {
+    background-color: var(--colorPrincipal);
+} */
+
+/* ESTILOS GENERICOS */
+
+/* .contenedor{
+    max-width: 88%;
+    /* margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; */
+/* margin: 0 auto 0 auto 
+    margin: 0 auto;
+} */

@@ -1,5 +1,5 @@
 
-    //ESTRUCTURAS DE CONTROL: TENEMOS DOS TIPOS CONOPARADORES Y CONDICIONALES
+    //ESTRUCTURAS DE CONTROL: TENEMOS DOS TIPOS COMPARADORES Y CONDICIONALES
 
     // TIPO COMPARADORES
 
@@ -403,7 +403,7 @@ function sumaDeNumeros (x){
 
 sumaDeNumeros(6);
 
-/*EJERCICIO
+/*EJERCICIO 12
 USAR WHILE, CREAR UNA FUNCIÓN QUE DADO UN ARGUMENTO
 ME MUESTRE DE MANERA REGRESIVA, EL NUMERO ENTRE 10*/
 
@@ -418,3 +418,20 @@ function regresion (n1){
 
 regresion(10);
 
+/*EJERCICIO 13
+FUNCION QUE DADO UN ARGUMENTO, ME CALCULE LA MEDIA
+DE LA SUMA DE TODOS LOS VALORES
+USAR WHILE
+*/
+
+let resultadoejercicio13 = 0;
+let contador = 0;
+function ejercicio13(n4) {
+    while (n4 > 0) {
+        resultadoejercicio13 = n4 + resultadoejercicio13;
+        n4--;
+        contador++;
+    }
+    console.log("Media de la suma de los valores", resultadoejercicio13 / contador);
+}
+ejercicio13(45);
