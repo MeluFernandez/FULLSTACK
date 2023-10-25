@@ -281,38 +281,28 @@ F: ELIMINADUPLICADOS
 P: ARRAY
 */
 
-let elementos1 = [1,2,1,true,false,true]
-
+let elementos1 = [1,2,1,true,false, true,2,4]
+let arraySinDuplicados = [];
 
 function eliminaDuplicados(array){
-for (let i=0; i<=elementos1.length; i++){
-    if(typeof array[i] === ("number")*2 ){
-        
-    } else if (typeof array[i] === ("boolean")*2 ){
-        
-    }else if (typeof array[i] === ("string")*2){
-
+for (let i=0; i<array.length; i++){
+        if (arraySinDuplicados.includes(array[i]) === false) {
+          arraySinDuplicados.push(array[i]);
+        }
+      } console.log(arraySinDuplicados);
     }
-} 
-}
 
-eliminaDuplicados(elementos1)
+eliminaDuplicados(elementos1);
 
-// function eliminarDuplicados(array) {
-//     const arraySinDuplicados = [];
+// function eliminaDuplicados(array){
+//     for (let i=array.length-1; i>=0; i--){
+//             if (arraySinDuplicados.includes(array[i]) === false) {
+//               arraySinDuplicados.pop(array[i]);
+//             }
+//           } console.log(arraySinDuplicados);
+//         }
     
-//     for (let elemento of array) {
-//       if (!arraySinDuplicados.includes(elemento)) {
-//         arraySinDuplicados.push(elemento);
-//       }
-//     }
-    
-//     return arraySinDuplicados;
-//   }
-
-// const miArray = [1, 2, 2, 3, 4, 4, 5];
-// const resultado = eliminarDuplicados(miArray);
-// console.log(resultado);  // Esto mostrará [1, 2, 3, 4, 5]
+//     eliminaDuplicados(elementos1);
 
 
 /*
@@ -356,11 +346,11 @@ F: NOMBREMES
 P: NUMMES
 */
 
-function nombreMes (numMes){
+// function nombreMes (numMes){
 
-}
+// }
 
-nombreMes("marzo")
+// nombreMes("marzo")
 
 /*
 EJRCICIO 18
