@@ -312,15 +312,15 @@ F: ORDENARARRAY
 P: ARRAY
 */
 
-// let arrayNumeros = [2,5,76,7,1,8]
+let arrayNumeros = [2,5,76,7,1,8]
 
-// function ordenarArray (array){
-//     for (let i=0; i<=array.length; i++){
-//         console.log(array.sort[i]);
-//     }
-// }
+function ordenarArray (array){
+    for (let i=0; i<=array.length; i++){
+        console.log(array.sort[i]);
+    }
+}
 
-// ordenarArray(arrayNumeros);
+ordenarArray(arrayNumeros);
 
 
 /*
@@ -347,10 +347,37 @@ P: NUMMES
 */
 
 function nombreMes (numMes){
+    switch (numMes){
+        case 1: (console.log("ES ENERO"));
+        break;
+        case 2: (console.log("ES FEBRERO"));
+        break;
+        case 3: (console.log("ES MARZO"));
+        break;
+        case 4: (console.log("ES ABRIL"));
+        break;
+        case 5: (console.log("ES MAYO"));
+        break;
+        case 6: (console.log("ES JUNIO"));
+        break;
+        case 7: (console.log("ES JULIO"));
+        break;
+        case 8: (console.log("ES AGOSTO"));
+        break;
+        case 9: (console.log("ES SEPTIEMBRE"));
+        break;
+        case 10: (console.log("ES OCTUBRE"));
+        break;
+        case 11: (console.log("ES NOVIEMBRE"));
+        break;
+        case 12: (console.log("ES DICIEMBRE"));
+        break;
+        default: (console.log("NO ES UN MES"))
 
+    }
 }
 
-nombreMes("marzo")
+nombreMes(20)
 
 /*
 EJRCICIO 18
@@ -363,9 +390,22 @@ P: CONTRASEÑA
 */
 
 
+
 /*
 EJERCICIO 19
 función que tome una cadena y reemplace todas las letras 'LETRA1' por 'LETRA2'.
 F: REEMPLAZAR
-P: LETRA1, LETRA2
+P: TEXTO, LETRA1, LETRA2
 */
+
+let texto = ["Hola"]
+
+function reemplazar (letra1,letra2){
+    for(let i=0; i<=texto.length; i++){
+    if(texto[i] === letra1){
+        return (letra2)
+    }
+} console.log(texto)
+}
+
+reemplazar("a","x");
