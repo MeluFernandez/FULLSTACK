@@ -346,11 +346,11 @@ F: NOMBREMES
 P: NUMMES
 */
 
-// function nombreMes (numMes){
+function nombreMes (numMes){
 
-// }
+}
 
-// nombreMes("marzo")
+nombreMes("marzo")
 
 /*
 EJRCICIO 18
