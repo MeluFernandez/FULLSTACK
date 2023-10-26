@@ -312,15 +312,14 @@ F: ORDENARARRAY
 P: ARRAY
 */
 
-let arrayNumeros = [2,5,76,7,1,8]
+let arraySinOrd = [2,5,76,7,1,8]
 
-function ordenarArray (array){
-    for (let i=0; i<=array.length; i++){
-        console.log(array.sort[i]);
-    }
-}
+function ordenar (array){
+    let arrayOrd = array.sort(function(a,b){return a-b});
+    return arrayOrd
+};
 
-ordenarArray(arrayNumeros);
+console.log(ordenar(arraySinOrd))
 
 
 /*
@@ -389,7 +388,19 @@ F: CONTRASEÑASEGURA
 P: CONTRASEÑA
 */
 
+function contraseñaSegura(contraseña){
+    if (contraseña.length>7 && 
+        /[A-Z]/.test(contraseña)&&
+        /[a-z]/.test(contraseña)&&
+        /\d/.test(contraseña)){
+        console.log("La contraseña es segura");
+        } else {
+            console.log("La contraseña no es segura");
+        }
+    
+}
 
+contraseñaSegura("holaestoesunacontra34");
 
 /*
 EJERCICIO 19
