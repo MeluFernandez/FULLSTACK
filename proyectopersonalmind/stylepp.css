@@ -1,16 +1,21 @@
 :root {
     --colorPrincipal: #2779b8;
     --colorSecundario: #9ed6f9;
+    --colorFondo:  #161616;
     --fuentePrincipal: 'Montserrat', sans-serif;
 }
 
 html {
     font-size: 62.5%;
+    background-color: var(--colorSecundario);
   }
 
 body {
-    font-size: 16px;
     font-family: var(--fuentePrincipal);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #000;
   }
 
 @media (min-width: 1140px) {
@@ -38,7 +43,7 @@ body {
 
 .navegador {
     padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     
 }
 
@@ -47,6 +52,7 @@ body {
 }
 .navegador, .enlaces, .logo {
   z-index: 1 !important;
+  
 }
 
 .enlaces{
@@ -62,7 +68,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 3.7rem;
-  text-shadow: 1px 1px 1px #000;
   letter-spacing: -1.9px;
  
 }
@@ -79,11 +84,182 @@ body {
   justify-content: center;
 }
 
+
+
+
+
+/* ESTILOS DEL MAIN  */
+
+
 .sobreNosotros {
-  margin-top: -10%;
-  z-index: 10;
+  margin-top: -35%;
+  /* z-index: 10; */
+  background-color: var(--colorSecundario);
 }
 
-.imagenFondo, .sobreNosotros div{
-  z-index: -10 !important;
+
+.imgLogo{
+  margin-top: -23.3%;
+  margin-left: 55%;
+  width: 40%; /* Establece el ancho de la imagen */
+  height: 40%; /* Establece la altura de la imagen */
+  border-radius: 65%; 
+  
+}
+
+.imgLogo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.descripcion h3{
+background: linear-gradient(to right, var(--colorSecundario) 40%, var(--colorPrincipal) 65%);
+padding: 5.5rem  5.5rem;
+width: 40%;
+margin-left: 5%;
+margin-top: -34%;
+margin-bottom: 40px;
+border-radius: 20px;
+}
+
+.descripcion {
+  position: absolute; 
+  z-index: 1; 
+ 
+}
+
+.descripcion a {
+  background-color: white;
+  color: var(--colorPrincipal);
+  border: 2px solid var(--colorPrincipal);
+  padding: 24px 94px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 5%;
+  border-radius: 20px;
+}
+
+.descripcion a:hover {
+  color: white;
+  background: linear-gradient(to right, var(--colorSecundario) 40%, var(--colorPrincipal) 65%);
+  border: 2px solid white; /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
+}
+
+
+
+/* SECCION HOME CON REDES SOCIALES EN TIEMPO REAL  */
+
+.home h3{
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rrss{
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  height: 500px;
+}
+
+.rrss a{
+  text-decoration: none;
+  padding: 80px 80px;
+  background-color: var(--colorPrincipal);
+  color: white;
+  text-transform: uppercase;
+}
+
+
+/* SECCION SERVICIOS  */
+
+
+
+.servicios div{
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom:50px ;
+  color: white;
+}
+
+.servicios a{
+  background-color: white;
+  color: var(--colorPrincipal);
+  border: 2px solid var(--colorPrincipal);
+  padding: 24px 94px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 5%;
+  border-radius: 20px;
+}
+
+.servicios a:hover {
+  color: white;
+  background: linear-gradient(to right, var(--colorSecundario) 40%, var(--colorPrincipal) 65%);
+  border: 2px solid white; /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
+}
+
+.formulario{
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  color: var(--colorPrincipal);
+}
+
+
+
+/* SECCION INFOPRODUCTOS  */
+
+.infoproductos{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colorPrincipal);
+ 
+}
+
+.imgInfo {
+  height: 35%;
+  width: 35%;
+}
+
+.enlacesInfo{
+  margin-top: 20px;
+}
+
+.enlacesInfo a{
+  background-color: white;
+  color: var(--colorPrincipal);
+  border: 2px solid var(--colorPrincipal);
+  padding: 20px 80px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  
+}
+
+.enlacesInfo a:hover {
+  color: white;
+  background: linear-gradient(to right, var(--colorSecundario) 40%, var(--colorPrincipal) 65%);
+  border: 2px solid white; /* EL 1 DICE EL GROSOR DE LA LINEA Y EL SOLID QUE SEA UNA LINEA SOLIDA*/
+}
+
+ .tituloInfo {
+  
+  color: var(--colorPrincipal);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--fuentePrincipal);
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  
 }

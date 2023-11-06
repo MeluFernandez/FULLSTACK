@@ -627,9 +627,9 @@ h1:after {
 }
 
 @media (max-width:768px) {
-  .cajaLocalizaciones {
-    /* flex-wrap: wrap; */
-  }
+  /* .cajaLocalizaciones {
+     flex-wrap: wrap;
+  } */
   .cajaLocalizaciones /*div*/{
     /* width: 100%; */
     grid: 1fr 1fr/ 1fr;

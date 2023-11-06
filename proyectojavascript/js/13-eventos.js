@@ -209,3 +209,62 @@ POR ULTIMO FUNCIONES
 
 
 */
+
+/*EJERCICIO
+
+CREAR UN ARCHIVO .JSON QUE ALMACENE LA INFO DE ZONAS TUCARRERADIGITAL
+
+CREAR UN FETCH QUE ME LEA LA INFORMACIÓN Y ME LA MUESTRE POR PANTALLA
+EN EL MISMO FORMATO QUE SE MUESTRA
+
+*/
+
+function informacionZonas(){
+    fetch("zonas.json")  
+    .then(resultado=>{
+        return resultado.json() 
+    })
+    .then(datos =>{
+        const {zonasTuCarreraDigital} = datos;
+        console.log (zonasTuCarreraDigital);
+        
+        zonasTuCarreraDigital.forEach(function (zona) {
+
+            let divElement = document.createElement("DIV");
+
+            let parrafoElement = document.createElement("P");
+            parrafoElement.textContent = zona.zonas;
+            divElement.appendChild(parrafoElement);
+
+            let parrafoElement2 = document.createElement("P");
+            parrafoElement2.textContent = zona.ciudades;
+            divElement.appendChild(parrafoElement2);
+
+
+            let enlace1 = document.createElement("A");
+            enlace1.textContent = ("IR A LA PAGINA DE ESTA ZONA")
+            enlace1.href = (zona.enlaceZonas)
+            divElement.appendChild(enlace1);
+
+            let enlace2 = document.createElement("A");
+            enlace2.textContent = ("VER CURSOS EN ESTA ZONA")
+            enlace2.href = (zona.enlaceCursos)
+            divElement.appendChild(enlace2);
+
+
+            let sectionZonas =document.querySelector(".zonas");
+            sectionZonas.appendChild(divElement)
+
+            // console.log(zona)
+            // console.log(zona.id)
+            // console.log(zona.zonas)
+            // console.log(zona.ciudades)
+            // console.log(zona.enlaceZonas)
+            // console.log(zona.enlaceCursos)
+
+        });
+    })
+}
+
+informacionZonas();
+

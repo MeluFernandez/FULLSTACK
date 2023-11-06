@@ -26,10 +26,12 @@
 
 <body>
     
-  <!-- PARA EL DISEÑO DE LA PAGINA AYUDARME CON CANVA Y IR DISEÑANDOLO AHI PARA LUEGO PASARLA AL CSS, TAMBIEN MIRAR OTRAS PAGINAS QUE ME AYUDEN A VER COMO QUIERO ORGANIZARLA Y USAR CHAT GPT PARA QUE ME DIGA COMO HACER CADA COSA Y SER ESPECIFICA -->
 
   <!-- quiere que al ingresar a la pagina tenga algun efecto de la imagen ,el fondo y las secciones -->
   
+
+
+
   <!-- header o nav boton para ir (AL HOME)que diga GOOD MOOD, quienes somos, servicios, mentorias, contacto  -->
 
   <header class="navegador">
@@ -49,45 +51,100 @@
 
   </header>
 
+
+
   <!--  Quiénes somos (Foto nuestra y Descripción) (Cuando envíes lo que hayas hecho te digo más cosas para que le añadas y quedé más guay) -->
 
   <main class="sobreNosotros">
 
     <div class="imagenes">
 
-      <div>
-        <div>>
-     <img class="imagenFondo" src="./img/PORTADA o BANNER (Por si quieres Usar).jpg" alt=""> 
-        </div>
+      <img class="imagenFondo" src="./img/PORTADA o BANNER (Por si quieres Usar).jpg" alt="">
+      <img class="imgLogo" src="./img/LOGO.jpeg" alt="">   
+
     </div>
 
-     <img src="./img/LOGO.jpeg" alt="">
+    <div class="descripcion">
+      <h3>Good Mood es un proyecto lanzado para que todo el que quiera pueda conectar con ese "Good Mood" al que todos tenemos acceso y poder sentir la paz y plenitud en todas las áreas de nuestra vida.</h3>
+      <a href="#">Comienza Aqui</a>
     </div>
 
-    <div>
-     <h3>good mood es un proyecto lanzado para que todo el que quiera pueda conectar con ese "good mood" al que todos tenemos acceso y poder sentir la paz y plenitud en todas las áreas de nuestra vida.</h3>
-    </div>
   </main>
 
   <!-- Home (Con algún plugin para que cuando se actualice una cosa en alguna red se vea reflejada)-->
 
-  <section></section>
+  <section class="home">
 
-  <!-- Servicios; ¿En que podemos ayudarte? Y dentro de la sección que haya: PDF Gratuito de cómo vivir en la Mejor, Info producto "Cómo vivir en la Mejor", meter el pdf tipo blog-->
+    <h3>novedades</h3>
 
-  <section>
-
-    <h2>¿en que podemos ayudarte?</h2>
-    <a href="">pdf como vivir en la mejor</a>
-
-    <!-- Mentorías; tipo reserva calendario se hace con java y base de datos pero ver si llego a hacerlo si no que lo lleve directo a whatsapp--> 
-
-    <div>
-        <h2>mentorias:</h2>
-        <form action=""></form>
+    <div class="rrss">
+       <a href="https://instagram.com/goodmoodlamejor">instagram</a>
+       <a href="https://instagram.com/goodmoodlamejor">podcast</a>
+       <a href="https://instagram.com/goodmoodlamejor">videos</a>
     </div>
 
   </section>
+
+
+
+  <!-- Servicios; ¿En que podemos ayudarte? Y dentro de la sección que haya: PDF Gratuito de cómo vivir en la Mejor, Info producto "Cómo vivir en la Mejor", meter el pdf tipo blog-->
+
+  <section class="servicios">
+
+    <div>
+      <h2>¿en que podemos ayudarte?</h2>
+      <h3>breve descripcion del pdf</h3>
+      <a href="">descargar pdf como vivir en la mejor</a>
+    </div>
+
+    <form class="formulario">
+      <fieldset>
+        <legend>descarga el pdf</legend>
+
+        <label>Nombre y Apellido*</label>
+        <input type="text" placeholder="Escribe aqui tu nombre" required />
+
+        <label>Telefono</label>
+        <input type="tel" placeholder="Escribe tu numero" />
+
+        <label>Email</label>
+        <input type="text" placeholder="Escribe tu email" />
+
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+
+</section>
+
+
+<!-- SECCION INFOPRODUCTOS -->
+<section class="infoproductos">
+   
+      <h2>productos destacados</h2>
+      <a href=""><img  class="imgInfo" src="img/LOGO.jpeg"alt=""></a>
+
+      <a href="#" class="tituloInfo">titulo del infoproducto</a>
+      
+      <div class="enlacesInfo">
+         
+         <a href="#">acceder</a>
+      </div>
+    
+
+</section>
+
+
+
+ <!-- Mentorías; tipo reserva calendario se hace con java y base de datos pero ver si llego a hacerlo si no que lo lleve directo a whatsapp--> 
+
+<section class="mentorias">
+
+    <div>
+        <h2>mentorias:</h2>
+        
+    </div>
+
+ </section>
 
   <!-- Contacto (Redes de Good Mood) -->
 
