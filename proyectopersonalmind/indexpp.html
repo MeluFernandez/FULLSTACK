@@ -16,6 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&display=swap" rel="stylesheet">
 
+    <!-- <title>Calendario HTML</title>
+     Incluye FullCalendar desde un CDN 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css"> -->
+
+    <title>Calendario de Reservas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.js"></script>
+</head>
+
 
 </head>
 
@@ -124,7 +133,7 @@
       <a href=""><img  class="imgInfo" src="img/LOGO.jpeg"alt=""></a>
 
       <a href="#" class="tituloInfo">titulo del infoproducto</a>
-      
+
       <div class="enlacesInfo">
          
          <a href="#">acceder</a>
@@ -141,7 +150,68 @@
 
     <div>
         <h2>mentorias:</h2>
+
+        <!-- <div id="calendario"></div> -->
+
+        <div id="calendario"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendario');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth', // Vista inicial del mes
+                editable: true, // Permite arrastrar y soltar eventos
+                selectable: true, // Permite seleccionar fechas
+                select: function(info) {
+                    // Maneja la selección de una fecha
+                    var title = prompt('Nombre de la reserva:');
+                    if (title) {
+                        calendar.addEvent({
+                            title: title,
+                            start: info.startStr,
+                            end: info.endStr
+                        });
+                    }
+                    calendar.unselect();
+                },
+                events: [ // Puedes cargar eventos desde una fuente externa aquí
+                    {
+                        title: 'Reserva 1',
+                        start: '2023-11-03',
+                        end: '2023-11-05'
+                    },
+                    {
+                        title: 'Reserva 2',
+                        start: '2023-11-10',
+                        end: '2023-11-12'
+                    }
+                ]
+            });
+
+            calendar.render();
+        });
+    </script>
         
+        <!-- <div id="calendario">
+          <table>
+            <thead>
+              <tr>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mié</th>
+                <th>Jue</th>
+                <th>Vie</th>
+                <th>Sáb</th>
+                <th>Dom</th>
+              </tr>
+            </thead>
+            <tbody>
+               Aquí se generarán dinámicamente los días del mes 
+            </tbody>
+          </table>
+        </div> -->
+
+
     </div>
 
  </section>
@@ -213,14 +283,9 @@
 
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.js"></script>
 
-   
-
-
-
-
-
-
+   <script src="./calendarpp.js"></script>
 
 
 </body>
